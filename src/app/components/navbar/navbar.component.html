@@ -1,20 +1,33 @@
-<nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
-    <div class="container-fluid">
-      <a class="name" href="#" >Eliran Gabay</a>
-      <div class="icons">
-        <a target="_blank"  href="https://github.com/elirangabay" aria-label="My github">
-            <fa-icon class="icon" [icon]="faGithub" size="2x"></fa-icon>
-        </a>
-        <a target="_blank"  href="https://www.linkedin.com/in/eliran-gabay/" aria-label="My linkdin">
-            <fa-icon class="icon" [icon]="faLinkedin" size="2x"></fa-icon>
-        </a>
-      </div>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="toggler-icon top-bar"></span>
-        <span class="toggler-icon bot-bar"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar">
-
-      </div>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="name" href="#" >Eliran Gabay</a>
+    <div class="icons">
+      <a target="_blank"  href="https://github.com/elirangabay" aria-label="My github">
+        <fa-icon class="icon" [icon]="faGithub" size="2x"></fa-icon>
+      </a>
+      <a target="_blank"  href="https://www.linkedin.com/in/eliran-gabay/" aria-label="My linkdin">
+        <fa-icon class="icon" [icon]="faLinkedin" size="2x"></fa-icon>
+      </a>
     </div>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon bot-bar"></span>
+    </button>
+    <div class="nav flex-column collapse" id="navbar">
+      <ul class="col-item">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contant</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
