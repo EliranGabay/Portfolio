@@ -5,29 +5,30 @@
   color: #eeeeee;
   justify-content: center;
   align-items: center;
-  margin-top: 22%;
+  margin-top: 13%;
 }
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50%;
+  margin-top: 20%;
+  margin-left: 5%;
 }
 
 .code {
-  width: 12%;
+  width: 8%;
   z-index: 1;
   position: absolute;
-  margin-bottom: 20%;
+  margin-bottom: 12%;
 }
 .comp {
-  width: 50%;
+  width: 30%;
   z-index: 0;
   position: absolute;
 }
 .lins {
-  width: 55%;
+  width: 32.5%;
   z-index: -1;
   position: absolute;
   margin-top: 1%;
