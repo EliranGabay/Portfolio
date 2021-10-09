@@ -1,10 +1,10 @@
 <!--NAVBAR-->
 <app-navbar></app-navbar>
 <!--FULLPAGE-->
-<div fullpage id="fullpage2" [options]="config" (ref)="getRef($event)">
+<div class="sky-color"></div>
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
     <div class="section"><app-home></app-home></div>
-	<div class="section"><h1>Section 2</h1></div>
-	<div class="section"><h1>Section 4</h1></div>
+	<div class="section"><app-projects></app-projects></div>
 </div>
 <!--ROUTER-->
 <router-outlet></router-outlet>

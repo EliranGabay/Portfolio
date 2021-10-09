@@ -16,7 +16,7 @@ export class AppComponent  {
     // this is just an example => for more details on config please visit fullPage.js docs
     this.config = {
       licenseKey: 'YOUR LICENSE KEY HERE',
-      anchors: ['Home'],
+      anchors: ['Home','Projects'],
       navigation: false,
     };
   }

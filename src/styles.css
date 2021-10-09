@@ -1,19 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~fullpage.js/dist/fullpage.min.css";
 
-.sky-color {
-  background-image: linear-gradient(
-    to bottom,
-    #072142,
-    #061c37,
-    #07182b,
-    #061220,
-    #020b16
-  );
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -200;
+.none-background {
+  background-color: transparent;
 }
