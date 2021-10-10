@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px 0;
 }
 
 .box {
@@ -18,8 +17,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 320px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: 40px 30px;
   transition: 0.5s;
 }
@@ -132,23 +131,25 @@
 .container .box .content {
   position: relative;
   left: 0;
-  padding: 20px 40px;
+  padding-top: 20px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   backdrop-filter: blur(10px);
   z-index: 1;
   transition: 0.5s;
-  color: #fff;
+  min-width: 300px;
+  min-height: 200px;
 }
 
 .container .box:hover .content {
   left: -25px;
-  padding: 60px 40px;
+  padding-top: 40px;
 }
 
 .container .box .content h2 {
-  font-size: 2em;
+  font-size: 1.3em;
+  line-height: 1.4em;
   color: #fff;
   margin-bottom: 10px;
 }
@@ -157,13 +158,26 @@
   font-size: 1.1em;
   line-height: 1.4em;
   margin-bottom: 10px;
+  color: rgb(214, 209, 209);
 }
 
 .container.container-fluid {
   width: 100%;
   margin: auto;
   text-align: center;
-  color: #eeeeee;
   justify-content: center;
   align-items: center;
+}
+
+.container .box .content a {
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  min-width: 70px;
+}
+
+.display-1 {
+  color: #fff;
 }
