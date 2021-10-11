@@ -11,11 +11,11 @@
                 <hr>
                 <small>Update on {{repo.updated_at | date:'mediumDate'}}</small>
                 <div class="d-grid gap-2 d-md-block">
-                    <a href={{repo.clone_url}} target=" _blank" class="btn btn-outline-dark">
+                    <a [attr.href]="repo.clone_url" target=" _blank" class="btn btn-outline-dark">
                         <fa-icon class="icon" [icon]="faGithub" size="1x"></fa-icon>
                         Repo
                     </a>
-                    <a href="/home" target=" _blank" class="btn btn-outline-dark">
+                    <a [attr.href]="repo.html_url+'/archive/refs/heads/master.zip'" target=" _blank" class="btn btn-outline-dark">
                         <fa-icon class="icon" [icon]="faGithub" size="1x"></fa-icon>
                         Clone
                     </a>
