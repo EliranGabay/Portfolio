@@ -9,13 +9,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContantComponent } from './components/contant/contant.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutComponent,
+    ContantComponent
   ],
   imports: [
     BrowserModule,

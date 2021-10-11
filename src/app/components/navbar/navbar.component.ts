@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import{faGithub,faLinkedin} from '@fortawesome/free-brands-svg-icons'
-
+import{faGithub,faLinkedin,faWhatsapp} from '@fortawesome/free-brands-svg-icons'
+import{faEnvelope}from '@fortawesome/free-solid-svg-icons'
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -9,6 +9,8 @@ import{faGithub,faLinkedin} from '@fortawesome/free-brands-svg-icons'
 export class NavbarComponent implements OnInit {
   faLinkedin=faLinkedin;
   faGithub=faGithub;
+  faWhatsapp=faWhatsapp;
+  faEnvelope=faEnvelope;
   navbarVisible = false;
   navbarOpen=true;
   constructor() { }
