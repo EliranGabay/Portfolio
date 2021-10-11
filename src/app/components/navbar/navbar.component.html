@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top">
   <div class="container-fluid">
-    <a class="name" href="#" >Eliran Gabay</a>
+    <a class="name" href="#Home" >Eliran Gabay</a>
     <div class="icons">
       <a target="_blank"  href="https://github.com/elirangabay" aria-label="My github">
         <fa-icon class="icon" [icon]="faGithub" size="2x"></fa-icon>
@@ -9,23 +9,24 @@
         <fa-icon class="icon" [icon]="faLinkedin" size="2x"></fa-icon>
       </a>
     </div>
-    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"
+    [ngClass]="{'collapsed': navbarOpen}" (click)="collapseNav(); navOpen()">
       <span class="toggler-icon top-bar"></span>
       <span class="toggler-icon bot-bar"></span>
     </button>
-    <div class="nav flex-column collapse" id="navbar">
+    <div class="nav flex-column collapse" id="navbar" [ngClass]="{'show': navbarVisible}">
       <ul class="col-item">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#Home" target="_parent" (click)="collapseNav(); navOpen()">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
+          <a class="nav-link" href="#about" target="_parent" (click)="collapseNav(); navOpen()">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#Projects" target="_parent" (click)="collapseNav(); navOpen()">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contant</a>
+          <a class="nav-link" href="#contact" target="_parent" (click)="collapseNav(); navOpen()">Contant</a>
         </li>
       </ul>
     </div>
