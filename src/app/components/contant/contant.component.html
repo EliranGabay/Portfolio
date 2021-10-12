@@ -1,21 +1,20 @@
 <div class="none-background ">
-    <div class="container back container-fluid p-5">
-        <div class="titel">
+    <div class="back">
+        <div class="container">
             <h1>Contact Me</h1>
-        </div>
-        <div class="container log container-fluid">
-            <div class="input-group">
-                <input type="text" class="form-control name" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+            <div class="input-group mb-4">
+                <input type="text" class="form-control" placeholder="Name" aria-label="Full-Name" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-4">
+                <input type="text" class="form-control" placeholder="Mobile" aria-label="Mobile" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-4">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
             </div>
             <div class="input-group">
-                <input type="text" class="form-control email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                <textarea class="form-control textarea" placeholder="Message" aria-label="With textarea"></textarea>
             </div>
-            <div class="input-group">
-                <textarea  type="text" class="form-control msg" placeholder="Message" aria-label="Message" aria-describedby="basic-addon1"></textarea>
-            </div>
-            <div class="input-group">
-                <button class="btn btn-primary">Submit<fa-icon class="icon" [icon]="faShare"></fa-icon></button>
-            </div>
+            <input class="btn btn-outline-secondary" type="submit" value="Submit">
         </div>
     </div>
 </div>
