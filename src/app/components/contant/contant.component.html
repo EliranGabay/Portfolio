@@ -2,19 +2,21 @@
     <div class="back">
         <div class="container">
             <h1>Contact Me</h1>
-            <div class="input-group mb-4">
-                <input type="text" class="form-control" placeholder="Name" aria-label="Full-Name" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group mb-4">
-                <input type="text" class="form-control" placeholder="Mobile" aria-label="Mobile" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group mb-4">
-                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group">
-                <textarea class="form-control textarea" placeholder="Message" aria-label="With textarea"></textarea>
-            </div>
-            <input class="btn btn-outline-secondary" type="submit" value="Submit">
+            <form [formGroup]="form">
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Name" id="name" formControlName="name" aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Mobile" id="mobile" formControlName="mobile" aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Email" id="email" formControlName="email" aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group">
+                    <textarea class="form-control textarea" placeholder="Message" id="msg" formControlName="msg" required></textarea>
+                </div>
+                <input class="btn btn-outline-secondary" type="submit" value="Submit" [disabled]="!form.valid">
+            </form>
         </div>
     </div>
 </div>
