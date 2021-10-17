@@ -1,1 +1,21 @@
-<p>about works!</p>
+<div class="none-background ">
+    <div class="back">
+        <div class="container">
+            <div class="display-1">About Me</div>
+            <div class="card about">
+                <p>My name is Eliran, I graduated with a bachelor's degree in software engineering.</p>
+                <p>I am eager to build on my academic foundations of software engineer through continued 
+                    coursework and professional development and stay in tune with the latest technologies through continued coursework.</p>
+                <p>These days I am looking for my first job, I am looking for a job with good vibes where I can express my skills and grow in it.</p>
+                <p>You are welcome to look at the attached projects and resume.</p>
+                <p>If you think there may be a match between us, feel free to contact me on the contact page.</p>
+                <button class="btn btn-outline-secondary" (click)="downloadCV()" >Resume</button>
+            </div>
+            <div class="card lang">
+                <div class="icons">
+                    <fa-icon class="icon" *ngFor="let icon of icons;index as i" [icon]=icon [ngStyle]="{'color':colors[i]}" size="4x"></fa-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
