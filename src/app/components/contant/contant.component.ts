@@ -9,6 +9,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class ContantComponent implements OnInit {
   faShare=faShare;
   form!: FormGroup;
+  sendMsg=false;
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
@@ -21,5 +22,7 @@ export class ContantComponent implements OnInit {
 
   sendMail(){
     this.form.reset();
+    this.sendMsg=!this.sendMsg;
+    setTimeout(() => {this.sendMsg = !this.sendMsg}, 3000);
   }
 }

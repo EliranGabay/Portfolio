@@ -17,6 +17,8 @@
                 </div>
                 <input class="btn btn-outline-secondary" type="submit" value="Submit" [disabled]="!form.valid" (click)="sendMail()">
             </form>
+            <h2 *ngIf="sendMsg">Your message has been sent successfully</h2>
+            <h2 *ngIf="sendMsg">We will contact you soon...</h2>
         </div>
     </div>
 </div>
