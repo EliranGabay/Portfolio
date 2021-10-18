@@ -19,4 +19,7 @@ export class ContantComponent implements OnInit {
       msg: [null, Validators.required],});
   }
 
+  sendMail(){
+    this.form.reset();
+  }
 }

@@ -79,3 +79,8 @@
   border: 0;
   color: #fff;
 }
+
+textarea {
+  resize: none;
+  height: 80px;
+}
