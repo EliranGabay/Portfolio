@@ -3,10 +3,10 @@
         <h1 class="display-1">My Projects</h1>
     </div>
     <div class="container container-fluid">
-        <div class="box" *ngFor="let repo of repos">
+        <div class="box" *ngFor="let repo of repos| slice:0:6; let i=index">
             <span></span>
             <div class="content">
-                <h2>{{repo.name}}</h2>
+                <h2 >{{repo.name}}</h2>
                 <p>Language: {{repo.language}}</p>
                 <hr>
                 <small>Update on {{repo.updated_at | date:'mediumDate'}}</small>
