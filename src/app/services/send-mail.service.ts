@@ -11,7 +11,7 @@ export class SendMailService {
   }
 
   sendMailPost(payload:Object){
-    return this.http.post(`https://sendmailserver.netlify.app/msg`,payload);
+    return this.http.post(`https://sendmailserves.netlify.app/.netlify/functions/api/msg`,payload);
   }
 }
 
