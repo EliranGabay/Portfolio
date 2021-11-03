@@ -16,7 +16,7 @@
                 <div class="input-group">
                     <textarea class="form-control textarea" placeholder="Message" id="msg" name="msg" formControlName="msg" required></textarea>
                 </div>
-                <button class="btn btn-outline-secondary" type="submit" [disabled]="!form.valid">Send</button>
+                <button class="btn btn-outline-secondary" type="submit" [disabled]="!form.valid" (click)="sendMail()">Send</button>
             </form>
             <h2 *ngIf="sendMsg">Your message has been sent successfully</h2>
             <h2 *ngIf="sendMsg">We will contact you soon...</h2>

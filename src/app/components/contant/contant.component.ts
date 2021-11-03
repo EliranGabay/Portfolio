@@ -22,12 +22,6 @@ export class ContantComponent implements OnInit {
   }
 
   sendMail(){
-    this.sendMailService.sendMailPost({
-      "name" : this.form.value.name,
-      "mobile": this.form.value.mobile,
-      "email": this.form.value.email,
-      "text": this.form.value.msg
-    }).subscribe(data=>console.log(data));
     this.form.reset();
     this.sendMsg=!this.sendMsg;
     setTimeout(() => {this.sendMsg = !this.sendMsg}, 3000);
