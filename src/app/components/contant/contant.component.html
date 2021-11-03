@@ -15,11 +15,6 @@
                 <div class="input-group">
                     <textarea class="form-control textarea" placeholder="Message" id="msg" name="msg" formControlName="msg" required></textarea>
                 </div>
-                <div>
-                    <div class="field">
-                        <div data-netlify-recaptcha="true"></div>
-                    </div>
-                </div>
                 <input class="btn btn-outline-secondary" type="submit" value="Submit" [disabled]="!form.valid">
             </form>
             <h2 *ngIf="sendMsg">Your message has been sent successfully</h2>
