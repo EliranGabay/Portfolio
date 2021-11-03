@@ -28,7 +28,6 @@ export class ContantComponent implements OnInit {
       body: new URLSearchParams(this.form.controls.name.value).toString()
     }).then(() => console.log('Form successfully submitted')).catch((error) =>
       alert(error))
-    this.form.reset();
     this.sendMsg=!this.sendMsg;
     setTimeout(() => {this.sendMsg = !this.sendMsg}, 3000);
   }
