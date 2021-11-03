@@ -22,6 +22,12 @@ export class ContantComponent implements OnInit {
   }
 
   sendMail(){
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(this.form.controls.name.value).toString()
+    }).then(() => console.log('Form successfully submitted')).catch((error) =>
+      alert(error))
     this.form.reset();
     this.sendMsg=!this.sendMsg;
     setTimeout(() => {this.sendMsg = !this.sendMsg}, 3000);
